@@ -1,0 +1,7 @@
+<h1>Today You Gonna Eat at :</h1> 
+<p>
+<%= form_for([@restaurant, @restaurant.trackers.build]) do | f | %>
+<%= image_tag(@restaurant.image_url) %><br/><%= @restaurant.name %>
+<%= f.submit %> 
+<% end %>
+</p>

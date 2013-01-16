@@ -1,11 +1,10 @@
 class TrackersController < ApplicationController
 
-	def new 
-	
-	end 
 
 	def create 
-
+		@restaurant = Restaurant.find(params[:restaurant_id])
+		@tracker = @restaurant.trackers.create(params[:tracker])
+		redirect_to root_url 
 	end 
 
 end

@@ -1,7 +1,10 @@
 WhereToEat::Application.routes.draw do
-  resources :restaurants
+  resources :restaurants do 
+    resources :trackers
+  end 
 
-
+  root :to => "pages#index"
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
