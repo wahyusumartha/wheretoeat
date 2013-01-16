@@ -21,6 +21,10 @@ class RestaurantsController < ApplicationController
     end
   end
 
+  def thanks 
+    @restaurant = Restaurant.find(params[:id])
+  end
+
   # GET /restaurants/new
   # GET /restaurants/new.json
   def new

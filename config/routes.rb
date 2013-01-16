@@ -4,7 +4,9 @@ WhereToEat::Application.routes.draw do
   end 
 
   root :to => "pages#index"
-  
+
+  match 'restaurants/thanks/:id' => 'restaurants#thanks', :as => :restaurants_thanks
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

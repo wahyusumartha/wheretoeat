@@ -8,7 +8,7 @@ class PagesController < ApplicationController
 		restaurants.each do | r | 
 			@restaurant = r
 		end 
-
 	end 
+
 
 end
